@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV & Surat Lamaran Kerja | Bagus Prabowo</title>
+
+<style>
+:root{
+    --bg:#f4f6f8;
+    --card:#ffffff;
+    --text:#1f2937;
+    --accent:#2563eb;
+}
+
+.dark{
+    --bg:#0f172a;
+    --card:#1e293b;
+    --text:#e5e7eb;
+    --accent:#38bdf8;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.8;
+    transition:0.3s;
+}
+
+/* NAVBAR */
+nav{
+    background:var(--card);
+    padding:15px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    box-shadow:0 0 18px rgba(37,99,235,0.35);
+    z-index:1000;
+}
+
+nav a, nav button{
+    margin:0 10px;
+    background:none;
+    border:none;
+    color:var(--text);
+    font-weight:bold;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+/* LAYOUT */
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:25px;
+}
+
+/* CARD */
+.card{
+    background:var(--card);
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:14px;
+    box-shadow:0 12px 28px rgba(0,0,0,0.08);
+    animation:fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1;}
+}
+
+h1,h2{
+    color:var(--accent);
+    margin-bottom:15px;
+}
+
+h3{
+    margin-top:20px;
+    margin-bottom:8px;
+}
+
+/* PROFILE */
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:150px;
+    border-radius:50%;
+    border:4px solid var(--accent);
+    box-shadow:0 0 22px rgba(37,99,235,0.6);
+    margin-bottom:15px;
+}
+
+/* LIST */
+ul{
+    margin-left:20px;
+}
+
+ul li{
+    margin-bottom:10px;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 26px;
+    background:linear-gradient(45deg,#2563eb,#38bdf8);
+    color:white;
+    border-radius:25px;
+    text-decoration:none;
+    box-shadow:0 0 15px rgba(56,189,248,0.6);
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* SIGNATURE */
+.signature{
+    font-family:'Brush Script MT', cursive;
+    font-size:34px;
+    color:var(--accent);
+    margin-bottom:10px;
+}
+
+/* AUDIO */
+audio{
+    width:100%;
+    margin-top:15px;
+}
+
+@media(max-width:600px){
+    h1{font-size:22px;}
+    h2{font-size:18px;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#cv">Curriculum Vitae</a>
+    <a href="#lamaran">Surat Lamaran</a>
+    <button onclick="toggleMode()">🌙 Dark Mode</button>
+    <button onclick="window.print()">🖨 Cetak / PDF</button>
+</nav>
+
+<div class="container">
+
+<!-- PROFIL -->
+<div class="card profile">
+    <img src="foto-profil.jpeg" alt="Foto Profil">
+    <h1>Bagus Prabowo</h1>
+    <p><b>Mahasiswa Aktif | Waiter / Pelayan</b></p>
+    <p>Alamat: Jl.Marelan IX, Jl. Ps. 1 Rel Gg. Setia, Tanah Enam Ratus, Kec. Medan Marelan, Sumatera Utara 20245</p>
+    <p>No. HP: 0838-7490-5302 | Email: prabowobagus458@gmail.com</p>
+</div>
+
+<!-- CV -->
+<div class="card" id="cv">
+    <h2>Curriculum Vitae</h2>
+
+    <h3>Data Pribadi</h3>
+    <p>
+        Nama Lengkap : Bagus Prabowo<br>
+        Jenis Kelamin : Laki-laki<br>
+        Agama : Islam<br>
+        Status : Mahasiswa Aktif<br>
+        Pendidikan Saat Ini : D3 Manajemen Informatika<br>
+        Institusi : Politeknik Ganesha Medan Marelan
+    </p>
+
+    <h3>Profil Singkat</h3>
+    <p>
+        Saya merupakan mahasiswa aktif yang memiliki pengalaman kerja di bidang Food and Beverage (F&B),
+        khususnya sebagai waiter/pelayan. Terbiasa bekerja dengan sikap sopan, disiplin, dan bertanggung jawab.
+        Mampu bekerja secara tim maupun individu serta siap mengikuti sistem kerja yang berlaku di perusahaan.
+    </p>
+
+    <h3>Pengalaman Kerja</h3>
+    <ul>
+        <li>
+            <b>Waiter – Restoran Srikandi, Medan Marelan</b> (± 1,5 Tahun)<br>
+            Melayani pelanggan, mencatat pesanan, menyajikan makanan dan minuman,
+            menjaga kebersihan area kerja, serta berkoordinasi dengan tim dapur dan kasir.
+        </li>
+        <li>
+            <b>Casual Waiter – Kafe</b><br>
+            Membantu pelayanan pada jam ramai, menyiapkan meja,
+            membersihkan area kerja, dan memastikan kenyamanan pelanggan.
+        </li>
+    </ul>
+
+    <h3>Keahlian</h3>
+    <ul>
+        <li>Pelayanan pelanggan (Customer Service)</li>
+        <li>Komunikasi yang baik dan sopan</li>
+        <li>Kerja sama tim</li>
+        <li>Disiplin dan bertanggung jawab</li>
+        <li>Mampu bekerja di bawah tekanan</li>
+        <li>Kondisi fisik yang baik</li>
+    </ul>
+
+    <h3>Kesiapan Kerja</h3>
+    <ul>
+        <li>Bersedia bekerja casual hari Sabtu dan Minggu</li>
+        <li>Bersedia mengikuti sistem shift</li>
+        <li>Siap dipertimbangkan menjadi karyawan tetap menyesuaikan jadwal kuliah</li>
+        <li>Bersedia bekerja saat weekend dan hari besar</li>
+    </ul>
+</div>
+
+<!-- SURAT LAMARAN -->
+<div class="card" id="lamaran">
+    <h2>Surat Lamaran Kerja</h2>
+
+    <p>
+        Dengan hormat,<br><br>
+
+        Saya yang bertanda tangan di bawah ini, Yau, mahasiswa aktif Program Studi Pendidikan Jasmani
+        Kesehatan dan Rekreasi, dengan ini mengajukan permohonan lamaran pekerjaan sebagai
+        <b>Waiter/Pelayan</b> di perusahaan yang Bapak/Ibu pimpin.
+        <br><br>
+
+        Saat ini saya sedang menjalani perkuliahan, sehingga saya bersedia bekerja secara casual pada hari
+        Sabtu dan Minggu. Namun demikian, saya juga terbuka untuk dipertimbangkan menjadi karyawan tetap
+        dengan penyesuaian jam kerja mengikuti jadwal perkuliahan.
+        <br><br>
+
+        Saya memiliki pengalaman kerja sebagai waiter selama kurang lebih 1,5 tahun di Restoran Srikandi
+        Medan Marelan serta pernah bekerja secara casual di kafe. Dengan pengalaman tersebut, saya terbiasa
+        memberikan pelayanan yang sopan, ramah, dan profesional kepada pelanggan.
+        <br><br>
+
+        Sebagai bahan pertimbangan, bersama ini saya melampirkan Curriculum Vitae dan dokumen pendukung
+        lainnya. Besar harapan saya dapat diberikan kesempatan untuk mengikuti proses seleksi selanjutnya.
+        <br><br>
+
+        Atas perhatian Bapak/Ibu, saya ucapkan terima kasih.
+        <br><br>
+
+        Hormat saya,<br><br>
+
+
+        <img src="tanda_tangan.jpeg" alt="Tanda Tangan" width="180"><br>
+        <b>Bagus Prabowo</b>
+    </p>
+
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+    </audio>
+
+    <a class="btn" href="#" onclick="window.print()">Cetak Surat</a>
+</div>
+
+</div>
+
+<script>
+function toggleMode(){
+    document.body.classList.toggle('dark');
+}
+</script>
+
+</body>
+</html>
